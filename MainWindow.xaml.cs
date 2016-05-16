@@ -25,7 +25,7 @@ namespace ClientApp{
     /// </summary>
 
     public partial class MainWindow : Window {
-        private string address = "192.168.0.192";
+        private string address = "192.168.0.143";
         //private string address = "10.12.35.161";
         private int port = 3000;
         string base64buffer = "";
@@ -106,25 +106,14 @@ namespace ClientApp{
 
 
             });
-            SOD.On("check", (msgReceived) => {
 
-                Dispatcher.BeginInvoke(new ThreadStart(() => {
-                    if (txtTestData.Text != "" && flag == 0) {
-                        Console.WriteLine("checkstring");
-                        SOD.SendToDevices.All("string", base64buffer);
-                        flag = 1;
-                    }
+
+            SOD.On("setImgSize", (msgReceived) =>
+            {
+                Dispatcher.BeginInvoke(new ThreadStart(() =>
+                {
+                    w.setImgSize(Convert.ToDouble(msgReceived.data.width), Convert.ToDouble(msgReceived.data.height));
                 }));
-
-
-
-                //send string off to all devices
-
-                //SOD.SendStringToDevices(stringToSend, "all");
-                //SOD.SendToDevices.All("string", stringToSend);
-
-
-
             });
 
 

@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientApp"
         mc:Ignorable="d"
-        Title="Window1" Height="500" Width="500">
-    <Grid>
+        Title="Window1" Height="500" Width="500" WindowStyle="None" WindowStartupLocation="Manual" Top="560" Left="600">
+    <Canvas Name="canvas">
         <Border Grid.Row="1" Name="border">
-            <Image x:Name="image" Height="500" Width="500" Margin="15" Stretch="UniformToFill" VerticalAlignment="Top"/>
+            <!--<Image x:Name="image" Height="500" Width="500" Stretch="Uniform" VerticalAlignment="Top"/>-->
         </Border>
-    </Grid>
+    </Canvas>
 </Window>

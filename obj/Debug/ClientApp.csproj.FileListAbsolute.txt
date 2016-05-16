@@ -23,3 +23,28 @@ C:\Users\Matheus Fernandes\Documents\Visual Studio 2015\Projects\ClientApp\Clien
 C:\Users\Matheus Fernandes\Documents\Visual Studio 2015\Projects\ClientApp\ClientApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Matheus Fernandes\Documents\Visual Studio 2015\Projects\ClientApp\ClientApp\obj\Debug\Image1.g.cs
 C:\Users\Matheus Fernandes\Documents\Visual Studio 2015\Projects\ClientApp\ClientApp\obj\Debug\Image1.baml
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\ClientApp.exe.config
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\ClientApp.exe
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\ClientApp.pdb
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\SocketIOClient.dll
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\SOD_CS_Library.dll
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\WebSocket4Net.dll
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\SocketIOClient.pdb
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\SocketIOClient.xml
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\SOD_CS_Library.pdb
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\SOD_CS_Library.xml
+C:\Users\sydneypratte\LWD-HighRes\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp.csproj.ClientApp.exe.config
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\MainWindow.g.cs
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\Image1.g.cs
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\App.g.cs
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp_MarkupCompile.cache
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp_MarkupCompile.lref
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\MainWindow.baml
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\Image1.baml
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp.g.resources
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp.Properties.Resources.resources
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp.csproj.GenerateResource.Cache
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp.exe
+C:\Users\sydneypratte\LWD-HighRes\obj\Debug\ClientApp.pdb
