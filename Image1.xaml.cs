@@ -23,34 +23,49 @@ namespace ClientApp {
         private bool[] flags = new bool[2];
         public SOD_CS_Library.SOD SOD;
 
+        public Uri[] round_image;
+        public double[] img_height;
+        public double[] img_width;
+        public int round = 0;
+
         public Image image;
         public Image1()
         {
             InitializeComponent();
 
-            //image.Source = new BitmapImage(new Uri(@"\ENDANGERED-SAFARI-SQUARE.png", UriKind.Relative));
+            round_image = new Uri[3] {
+                new Uri(@"\map.png", UriKind.Relative),
+                new Uri(@"\ENDANGERED-SAFARI-SQUARE.png", UriKind.Relative),
+                new Uri(@"\vissearch1.png", UriKind.Relative)
+            };
 
-            //TransformGroup group = new TransformGroup();
-            //TranslateTransform tt = new TranslateTransform();
-            //group.Children.Add(tt);
-            //image.RenderTransform = group;
+            img_height = new double[3] {
+                1067,
+                1067,
+                1067
+            };
+            img_width = new double[3] {
+                1693,
+                1067,
+                1561
+            };
 
-            //image.MouseLeftButtonDown += image_MouseLeftButtonDown;
-            //image.MouseLeftButtonUp += image_MouseLeftButtonUp;
-            //image.MouseMove += image_MouseMove;
-
+            image = new Image();
+            canvas.Children.Add(image);
         }
 
-        public void setImgSize(double width, double height)
+        public void setImgSize(double width, double height, int round)
         {
-            image = new Image();
+            height = img_height[round];
+            width = img_width[round];
 
             double x = 0 - ((width / 2) - 250);
             double y = 0 - (height - 500);
 
-            image.Source = new BitmapImage(new Uri(@"\ENDANGERED-SAFARI-SQUARE.png", UriKind.Relative));
+            image.Source = new BitmapImage(round_image[round]);
             image.Height = height;
             image.Width = width;
+            image.Stretch = Stretch.Uniform;
             //image.VerticalAlignment = System.Windows.VerticalAlignment.Center;
 
             Canvas.SetLeft(image, x);
@@ -65,14 +80,14 @@ namespace ClientApp {
             image.MouseLeftButtonUp += image_MouseLeftButtonUp;
             image.MouseMove += image_MouseMove;
 
-            canvas.Children.Add(image);
+            
 
 
             var t = (TranslateTransform)((TransformGroup)image.RenderTransform).Children.First(tr => tr is TranslateTransform);
             origin = new Point(0, 0);
 
             Console.WriteLine("------------------------------------");
-            Console.WriteLine("X " + x + " Y = " + y);
+            Console.WriteLine("X " + width + " Y  " + height);
             //t.X = 0;
             //t.Y = 0;
             //t.X = origin.X - x;
@@ -80,6 +95,8 @@ namespace ClientApp {
 
 
         }
+
+        
 
         private void image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {

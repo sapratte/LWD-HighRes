@@ -112,7 +112,7 @@ namespace ClientApp{
             {
                 Dispatcher.BeginInvoke(new ThreadStart(() =>
                 {
-                    w.setImgSize(Convert.ToDouble(msgReceived.data.width), Convert.ToDouble(msgReceived.data.height));
+                    w.setImgSize(Convert.ToDouble(msgReceived.data.width), Convert.ToDouble(msgReceived.data.height), Convert.ToInt16(msgReceived.data.round));
                 }));
             });
 

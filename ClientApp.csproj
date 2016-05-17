@@ -150,7 +150,9 @@
   <ItemGroup>
     <Resource Include="ENDANGERED-SAFARI-SQUARE.png" />
     <Resource Include="map.png" />
-    <Resource Include="vissearch1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vissearch1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
